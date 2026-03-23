@@ -302,6 +302,49 @@ list.appendChild(li);
 <h2>Complex DOM</h2>
 <div><div><ul><li><span id="deep">Deep Element</span></li></ul></div></div>
 </div>
+<div class="section" id="link-text-section" data-testid="link-section" aria-label="link-section">
+<h2>Section 31: Link Text &amp; Partial Link Text</h2>
 
+<!-- 
+Automation Practice:
+- Locate using full link text
+- Locate using partial link text
+- Validate navigation
+- Handle target="_blank"
+-->
+
+<div class="link-container" id="link-container" name="linkContainer">
+
+    <!-- Full Link Text Example -->
+    <a id="full-link-1" class="link-item primary-link" name="seleniumDocs" data-testid="link-selenium" aria-label="Selenium Official Website" href="https://www.selenium.dev" target="_blank">
+       Selenium Official Website
+    </a>
+    <br><br>
+
+    <!-- Partial Link Text Example -->
+    <a id="partial-link-1" class="link-item secondary-link" name="playwrightDocs" data-testid="link-playwright" aria-label="Playwright Docs" href="https://playwright.dev" target="_blank">
+       Visit Playwright Automation Docs
+    </a>
+    <br><br>
+
+    <!-- Another Partial Match -->
+    <a id="partial-link-2" class="link-item tertiary-link" name="cypressDocs" data-testid="link-cypress" aria-label="Cypress Docs" href="https://www.cypress.io" target="_blank">
+       Learn Cypress Testing Framework
+    </a>
+    <br><br>
+
+    <!-- Nested Link for XPath Practice -->
+    <div id="nested-link-wrapper" class="nested-wrapper" data-testid="nested-link">
+        <span class="outer-span">
+            <span class="inner-span">
+                <a id="nested-link" class="deep-link" name="robotFramework" data-testid="link-robot" aria-label="Robot Framework Site" href="https://robotframework.org" target="_blank">
+                   Robot Framework Official Page
+                </a>
+            </span>
+        </span>
+    </div>
+
+</div>
+</div>
 </body>
 </html>
